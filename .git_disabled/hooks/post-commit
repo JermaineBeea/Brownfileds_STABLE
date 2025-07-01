@@ -1,0 +1,16 @@
+#!/bin/bash
+pwd
+if [ -e .commit ] ; then
+  echo "Post-Commit"
+  TIMESTAMP=`date +%Y%m%d%H%M%S`
+  BRANCH=`git rev-parse --abbrev-ref HEAD`
+  IFS="@" read -r NAME EMAIL <<< `git config user.email`
+  TEMPNAME=".lms/.flow/${BRANCH}_${NAME}.flot"
+  FINALNAME=".lms/.flow/${BRANCH}_${NAME}_${TIMESTAMP}.flol"
+  rm .commit
+  if [ -e $TEMPNAME ] ; then
+    mv $TEMPNAME $FINALNAME
+    git add -f $FINALNAME
+    git commit --amend -C HEAD --no-verify
+  fi
+fi

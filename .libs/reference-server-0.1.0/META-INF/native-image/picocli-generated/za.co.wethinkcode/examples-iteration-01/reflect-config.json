@@ -1,0 +1,28 @@
+[
+  {
+    "name" : "picocli.CommandLine$AutoHelpMixin",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "fields" : [
+      { "name" : "helpRequested" },
+      { "name" : "versionRequested" }
+    ]
+  },
+  {
+    "name" : "za.co.wethinkcode.robots.server.Server",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "fields" : [
+      { "name" : "mines" },
+      { "name" : "obstacle" },
+      { "name" : "pits" },
+      { "name" : "port" },
+      { "name" : "size" },
+      { "name" : "visibility" }
+    ]
+  }
+]
