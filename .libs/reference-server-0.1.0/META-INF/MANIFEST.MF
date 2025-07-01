@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: herman
+Build-Jdk: 11.0.7
+Main-Class: za.co.wethinkcode.robots.server.Server
+
